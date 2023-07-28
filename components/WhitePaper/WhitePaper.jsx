@@ -1,7 +1,47 @@
-import React from "react";
+import {React, useState} from "react";
 import Link from "next/link";
+import 'react-phone-number-input/style.css'
+import PhoneInput from 'react-phone-number-input'
+
+
 
 const WhitePaper = () => {
+  
+  const [telefone, setTelefone] = useState('');
+
+  const handleChange = (event) => {
+    setTelefone(event.target.value);
+  };
+
+  
+  const enviarWhatsapp = () => {
+
+    // const numberFormatted = telefone.replace(/\D/g, '');
+
+    let body = {
+      "to": telefone,
+      "language": "pt"
+    };
+
+    console.log(body);
+    
+    let url = `https://api.zapmais.app/send-site-text/`;
+
+    fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(body),
+    }).then((response) => {
+      console.log(response);
+    }
+    );
+
+    
+  };
+
+
   return (
     <section className="document-area pt-60">
       <div className="container">
@@ -23,19 +63,23 @@ const WhitePaper = () => {
               <div className="section-title mb-35">
                 <span className="sub-title">Whitepaper</span>
                 <h2 className="title">
-                  Read Bigtech <span>Documents</span>
+                  Teste agora <span>nossa automação de Whatsapp</span>
                 </h2>
               </div>
 
-              <ul className="document-list">
-                <li>White Paper</li>
-                <li>Privaci & Policy</li>
-                <li>Terms Of Coin Sale</li>
-                <li>One Pager</li>
-              </ul>
+                <div className="footer-newsletter">
+                <form action="#">
+              
+                <PhoneInput
+      placeholder="Enter phone number"
+      value={telefone}
+      onChange={setTelefone}/>
+ 
+                    </form>
+                    </div>
 
-              <Link href="/" className="btn">
-                Download Doc
+              <Link href="#" onClick={enviarWhatsapp} className="btn">
+                Enviar mensagem
               </Link>
             </div>
           </div>

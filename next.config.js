@@ -1,4 +1,4 @@
-import { i18n } from 'next-i18next';
+// import { i18n } from 'next-i18next';
 
 const nextConfig = {
   reactStrictMode: true,
