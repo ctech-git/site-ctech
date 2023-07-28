@@ -1,0 +1,42 @@
+{
+  "menu": {
+    "home": "Inicio"
+  },
+  "MainHeader": "Desenvolvendo o seu produto com você.",
+  "About1": "Quem somos",
+  "About2": "Nossa essência é a paixão pela tecnologia. Juntos, podemos construir ou integrar qualquer sistema que você precisa para alavancar seu negócio",
+  "WhyChooseUs": "Quem somos?",
+  "WhyChooseUs2": [
+    "Trabalhamos sempre com as tecnologias mais recentes do mercado",
+    "Nossos projetos são desenvolvidos com as melhores práticas de programação",
+    "O bom relacionamento com nossos clientes é a nossa prioridade",
+    "Trabalhamos com metodologias ágeis para garantir a qualidade e a segurança do seu projeto"
+  ],
+  "Roadmap1": "Como trabalhamos?",
+  "Roadmap2": "Tudo que podemos fazer por você",
+  "Roadmap3": [
+    {
+      "title": "API e integrações",
+      "description": "Desenvolvemos APIs para integrar seu sistema com qualquer outro sistema ou aplicativo que você precisar."
+    },
+    {
+      "title": "Aplicativos",
+      "description": "Desenvolvemos aplicativos para Android e iOS, com as melhores práticas de programação e design."
+    },
+    {
+      "title": "Sites e sistemas",
+      "description": "Desenvolvemos sites e sistemas web com todas as necessidades dos nossos clientes"
+    },
+    {
+      "title": "Consultoria",
+      "description": "Ajudamos você a escolher a melhor tecnologia para o seu projeto"
+    },
+    {
+      "title": "BI e inteligência artificial",
+      "description": "Construa relatórios que irão ajudar você a tomar as melhores decisões para o seu negócio"
+    }
+  ],
+  "Whitepaper1": "Acompanhe",
+  "Whitepaper2": "Tenha todos os dados em mãos",
+  "Whitepaper3": "Disparos em massa de Whatsapp, gestão de leads, relatórios e muito mais",
+}
