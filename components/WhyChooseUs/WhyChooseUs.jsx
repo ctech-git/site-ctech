@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from "react";
 import SlickSlider from "../SlickSlider/SlickSlider";
 import WhyChooseUsItem from "./WhyChooseUsItem";
+import { useTranslation } from "next-i18next";
 
 const WhyChooseUs = () => {
+
+  const { t, i18n } = useTranslation(); // 'common' é o namespace definido na configuração
+
   const slickSettings = {
     dots: false,
     infinite: true,
@@ -51,51 +55,51 @@ const WhyChooseUs = () => {
       src: "/img/icon/choose_icon01.svg",
       alt: "",
       link: "/",
-      title: "Mobile payment make easy",
-      description: "Add new, trending and rare artwork to your collection.",
+      title: t("WhyChooseUs2_1_title"),
+      description: t("WhyChooseUs2_1"),
     },
     {
       src: "/img/icon/choose_icon02.svg",
       alt: "",
       link: "/",
-      title: "Lifetime free transaction",
-      description: "Add new, trending and rare artwork to your collection.",
+      title: t("WhyChooseUs2_2_title"),
+      description: t("WhyChooseUs2_2"),
     },
     {
       src: "/img/icon/choose_icon03.svg",
       alt: "",
       link: "/",
-      title: <>Protect the identity</>,
-      description: "Add new, trending and rare artwork to your collection.",
+      title: t("WhyChooseUs2_3_title"),
+      description: t("WhyChooseUs2_3"),
     },
     {
       src: "/img/icon/choose_icon04.svg",
       alt: "",
       link: "/",
-      title: "Sercurity & control over money",
-      description: "Add new, trending and rare artwork to your collection.",
+      title: t("WhyChooseUs2_4_title"),
+      description: t("WhyChooseUs2_4"),
     },
-    {
-      src: "/img/icon/choose_icon01.svg",
-      alt: "",
-      link: "/",
-      title: "Lifetime free transaction",
-      description: "Add new, trending and rare artwork to your collection.",
-    },
-    {
-      src: "/img/icon/choose_icon03.svg",
-      alt: "",
-      link: "/",
-      title: <>Protect the identity</>,
-      description: "Add new, trending and rare artwork to your collection.",
-    },
-    {
-      src: "/img/icon/choose_icon04.svg",
-      alt: "",
-      link: "/",
-      title: "Sercurity & control over money",
-      description: "Add new, trending and rare artwork to your collection.",
-    },
+    // {
+    //   src: "/img/icon/choose_icon01.svg",
+    //   alt: "",
+    //   link: "/",
+    //   title: "Lifetime free transaction",
+    //   description: "Add new, trending and rare artwork to your collection.",
+    // },
+    // {
+    //   src: "/img/icon/choose_icon03.svg",
+    //   alt: "",
+    //   link: "/",
+    //   title: <>Protect the identity</>,
+    //   description: "Add new, trending and rare artwork to your collection.",
+    // },
+    // {
+    //   src: "/img/icon/choose_icon04.svg",
+    //   alt: "",
+    //   link: "/",
+    //   title: "Sercurity & control over money",
+    //   description: "Add new, trending and rare artwork to your collection.",
+    // },
   ];
 
   const initalState = 0;
@@ -117,10 +121,10 @@ const WhyChooseUs = () => {
         <div className="row justify-content-center">
           <div className="col-xl-6">
             <div className="section-title text-center mb-50">
-              <span className="sub-title">why Choose us </span>
-              <h2 className="title">
-                Why choose our bigtech <span>Token</span>
-              </h2>
+              <span className="sub-title">{t("WhyChooseUs")}</span>
+              <h2 className="title"
+                dangerouslySetInnerHTML={{ __html: t("WhyChooseUs1") }}
+              ></h2>
             </div>
           </div>
         </div>

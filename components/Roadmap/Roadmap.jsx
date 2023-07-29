@@ -1,76 +1,12 @@
 import { useHorizontalScroll } from "@/lib/hooks/useHorizontalScroll";
 import React from "react";
 import RoadmapItem from "./RoadmapItem";
+import { useTranslation } from "next-i18next";
 
 const Roadmap = () => {
-  const roadmap_items = [
-    {
-      roadmapTitle: "Mid of Q4 2021",
-      title: "Concept",
-      info: [
-        "EVM support for parthians",
-        "SubQuery Academy",
-        "Proof of indexing",
-      ],
-    },
-    {
-      roadmapTitle: "Mid of Q4 2021",
-      title: "Research",
-      info: [
-        "SubQuery Builders/Grants Program",
-        "SQT Network contract internal MVP",
-        "Coordinator and client SDK",
-      ],
-    },
 
-    {
-      roadmapTitle: "Mid of Q4 2021",
-      title: "App beta test",
-      info: [
-        "Public testnet launch",
-        "SubQuery Network Explorer and dApp",
-        "Point-in-time indexing",
-      ],
-    },
-
-    {
-      roadmapTitle: "Mid of Q4 2021",
-      title: "Token Test",
-      info: [
-        "SQT token generation event",
-        "Public incentivize testnet launch",
-        "Data traffic insights and reporting",
-      ],
-    },
-    {
-      roadmapTitle: "Mid of Q4 2021",
-      title: "Alpha Test",
-      info: [
-        "Launch of the SubQuery Foundation",
-        "Finalise research for other Layer-1 chains",
-        "Liquidity mining program",
-      ],
-    },
-    {
-      roadmapTitle: "Mid of Q4 2021",
-      title: "Benefits",
-      info: [
-        "Mainnet launch",
-        "Centralized exchange launch",
-        "Public incentivize testnet",
-      ],
-    },
-    {
-      roadmapTitle: "Mid of Q4 2021",
-      title: "Operational",
-      info: [
-        <>
-          SubQuery launches its <br /> own parthian
-        </>,
-        "SubQuery Foundation",
-      ],
-    },
-  ];
+  const { t, i18n } = useTranslation(); // 'common' é o namespace definido na configuração
+  const roadmap_items = t('Roadmap3', { returnObjects: true });
 
   const scrollRef = useHorizontalScroll();
 
@@ -80,9 +16,9 @@ const Roadmap = () => {
         <div className="row justify-content-center">
           <div className="col-xl-5 col-lg-8">
             <div className="section-title text-center mb-60">
-              <span className="sub-title">OUr Roadmap</span>
+              <span className="sub-title">  {t("Roadmap1")}</span>
               <h2 className="title">
-                Bigtech Strategy and <br /> Project <span>Plan</span>
+                {t("Roadmap2")}
               </h2>
             </div>
           </div>

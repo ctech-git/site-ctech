@@ -1,18 +1,21 @@
 import React from "react";
+import { useTranslation } from "next-i18next";
 
 const TopPartners = () => {
   const partners_list = [
-    { src: "/img/partner/partner_img01.png", title: "" },
-    { src: "/img/partner/partner_img02.png", title: "" },
-    { src: "/img/partner/partner_img03.png", title: "" },
-    { src: "/img/partner/partner_img04.png", title: "" },
-    { src: "/img/partner/partner_img05.png", title: "" },
-    { src: "/img/partner/partner_img06.png", title: "" },
-    { src: "/img/partner/partner_img07.png", title: "" },
-    { src: "/img/partner/partner_img08.png", title: "" },
-    { src: "/img/partner/partner_img09.png", title: "" },
-    { src: "/img/partner/partner_img10.png", title: "" },
+    { src: "/img/partner/eventozz.svg", link: "https://eventozz.com/" },
+    { src: "/img/partner/zap.png", link: "https://zapmais.app/" },
+    { src: "/img/partner/1.svg", link: "https://multti.com/" },
+    { src: "/img/partner/2.svg", link: "https://www.sorteesportiva.bet/" },
+    { src: "/img/partner/3.png", link: "https://aprincipalbb.com.br" },
+    { src: "/img/partner/4.png", link: "https://investsolar.com.br/" },
+    { src: "/img/partner/5.svg", link: "https://dippi.com.br/" },
+    { src: "/img/partner/6_2.png", title: "https://www.maspara.com.br/" },
+    { src: "/img/partner/7.png", title: "https://intergraos.com/" },
+    { src: "/img/partner/9.png", title: "https://providencesaude.com/" }
   ];
+
+  const { t, i18n } = useTranslation(); // 'common' é o namespace definido na configuração
 
   return (
     <div className="partner-area pb-130">
@@ -20,7 +23,7 @@ const TopPartners = () => {
         <div className="row justify-content-center">
           <div className="col-lg-8">
             <div className="section-title text-center mb-10">
-              <span className="sub-title">Our top partner</span>
+              <span className="sub-title">  {t("Partners")}</span>
             </div>
           </div>
         </div>
@@ -29,8 +32,14 @@ const TopPartners = () => {
             <div className="partner-wrap">
               <ul>
                 {partners_list.map((item, index) => (
-                  <li key={index}>
-                    <img src={item.src} alt={item.title} />
+                  <li key={index}
+                    onClick={
+                      () => {
+                        window.open(item.link, '_blank'); // Redirecionar para outra aba
+                      }
+                    }
+                  >
+                    <img src={item.src} />
                   </li>
                 ))}
               </ul>

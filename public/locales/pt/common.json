@@ -2,8 +2,8 @@
   "menu": {
     "home": "Início",
     "about": "Sobre Nós",
-    "sales": "Serviços",
-    "rodmap": "Projetos",
+    "roadmap": "Serviços",
+    "whatsapp": "Projetos",
     "contact": "Contatos"
   },
   "MainHeader": "Desenvolvendo o seu <span>produto</span> com você.",
@@ -13,16 +13,20 @@
     "Three": "Consultoria"
   },
   "About1": "Quem somos",
-  "About2": "The World’s 1st <span>ICO</span> Platform ",
+  "About2": "Programadores focados <span>no seu produto</span>",
   "About3": "Nossa essência é a paixão pela tecnologia. Juntos, podemos construir ou integrar qualquer sistema que você precisa para alavancar seu negócio",
+  "Partners": "Principais Parceiros",
   "ButtonAbout": "Fale Conosco",
   "WhyChooseUs": "Quem somos?",
-  "WhyChooseUs2": [
-    "Trabalhamos sempre com as tecnologias mais recentes do mercado",
-    "Nossos projetos são desenvolvidos com as melhores práticas de programação",
-    "O bom relacionamento com nossos clientes é a nossa prioridade",
-    "Trabalhamos com metodologias ágeis para garantir a qualidade e a segurança do seu projeto"
-  ],
+  "WhyChooseUs1": "Why choose our bigtech <span>Token</span>",
+  "WhyChooseUs2_1_title": "Tecnologias",
+  "WhyChooseUs2_1": "Trabalhamos sempre com as tecnologias mais recentes do mercado",
+  "WhyChooseUs2_2_title": "Gestão",
+  "WhyChooseUs2_2": "Nossos projetos são desenvolvidos com as melhores práticas de programação",
+  "WhyChooseUs2_3_title": "Relacionamento",
+  "WhyChooseUs2_3": "O bom relacionamento com nossos clientes é a nossa prioridade",
+  "WhyChooseUs2_4_title": "Metodologia",
+  "WhyChooseUs2_4": "Trabalhamos com metodologias ágeis para garantir a qualidade e a segurança do seu projeto",
   "Roadmap1": "Como trabalhamos?",
   "Roadmap2": "Tudo que podemos fazer por você",
   "Roadmap3": [
@@ -48,6 +52,7 @@
     }
   ],
   "Whitepaper1": "Acompanhe",
-  "Whitepaper2": "Tenha todos os dados em mãos",
-  "Whitepaper3": "Disparos em massa de Whatsapp, gestão de leads, relatórios e muito mais"
+  "Whitepaper2": "Teste agora nossa <span>automação de Whatsapp</span>",
+  "Whitepaper3": "Insira seu telefone",
+  "Whitepaper4": "Testar automação"
 }

@@ -1,19 +1,21 @@
-import {React, useState} from "react";
+import { React, useState } from "react";
 import Link from "next/link";
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
+import { useTranslation } from "next-i18next";
 
 
 
 const WhitePaper = () => {
-  
+  const { t, i18n } = useTranslation(); // 'common' é o namespace definido na configuração
+
   const [telefone, setTelefone] = useState('');
 
   const handleChange = (event) => {
     setTelefone(event.target.value);
   };
 
-  
+
   const enviarWhatsapp = () => {
 
     // const numberFormatted = telefone.replace(/\D/g, '');
@@ -24,7 +26,7 @@ const WhitePaper = () => {
     };
 
     console.log(body);
-    
+
     let url = `https://api.zapmais.app/send-site-text/`;
 
     fetch(url, {
@@ -38,7 +40,7 @@ const WhitePaper = () => {
     }
     );
 
-    
+
   };
 
 
@@ -61,25 +63,22 @@ const WhitePaper = () => {
               data-wow-delay=".2s"
             >
               <div className="section-title mb-35">
-                <span className="sub-title">Whitepaper</span>
-                <h2 className="title">
-                  Teste agora <span>nossa automação de Whatsapp</span>
-                </h2>
+                <span className="sub-title"> {t("Whitepaper1")}</span>
+                <h2 className="title" dangerouslySetInnerHTML={{ __html: t("Whitepaper2") }}></h2>
+              </div>
+              <div className="footer-newsletter">
+                <form action="#">
+
+                  <PhoneInput
+                    placeholder={t("Whitepaper3")}
+                    value={telefone}
+                    onChange={setTelefone} />
+
+                </form>
               </div>
 
-                <div className="footer-newsletter">
-                <form action="#">
-              
-                <PhoneInput
-      placeholder="Enter phone number"
-      value={telefone}
-      onChange={setTelefone}/>
- 
-                    </form>
-                    </div>
-
-              <Link href="#" onClick={enviarWhatsapp} className="btn">
-                Enviar mensagem
+              <Link href="#" onClick={enviarWhatsapp} className="btn" style={{ marginTop: 10 }}>
+                {t("Whitepaper4")}
               </Link>
             </div>
           </div>

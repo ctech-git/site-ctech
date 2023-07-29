@@ -109,7 +109,7 @@ const HeaderOne = () => {
                 <nav className={"menu-nav"}>
                   <div className="logo">
                     <Link href={"/"}>
-                      <img src={"/img/logo/ctech.png"} alt="BigTech Logo" />
+                      <img src={"/img/logo/logo.png"} alt="BigTech Logo" />
                     </Link>
                   </div>
 
@@ -148,22 +148,22 @@ const HeaderOne = () => {
                           {t("menu.about")}
                         </Link>
                       </li>
-                      <li className={isActiveLink("#sales")}>
-                        <Link
-                          href="#sales"
-                          className={"section-link"}
-                          onClick={() => handleClickScroll("sales")}
-                        >
-                          {t("menu.sales")}
-                        </Link>
-                      </li>
                       <li className={isActiveLink("#roadmap")}>
                         <Link
                           href="#roadmap"
                           className={"section-link"}
                           onClick={() => handleClickScroll("roadmap")}
                         >
-                          {t("menu.rodmap")}
+                          {t("menu.roadmap")}
+                        </Link>
+                      </li>
+                      <li className={isActiveLink("#whatsapp")}>
+                        <Link
+                          href="#whatsapp"
+                          className={"section-link"}
+                          onClick={() => handleClickScroll("whatsapp")}
+                        >
+                          {t("menu.whatsapp")}
                         </Link>
                       </li>
                       {/* <li className={"menu-item-has-children"}>
@@ -229,7 +229,7 @@ const HeaderOne = () => {
                   <div className={"nav-logo"}>
                     <Link href="/">
                       <img
-                        src={"/img/logo/ctech.png"}
+                        src={"/img/logo/logo.png"}
                         alt="BigTech Logo"
                         title=""
                       />
