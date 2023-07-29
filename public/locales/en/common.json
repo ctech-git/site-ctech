@@ -1,42 +1,61 @@
 {
   "menu": {
-    "home": "Início em inglês"
+    "home": "Home",
+    "about": "About Us",
+    "roadmap": "Services",
+    "whatsapp": "Projects",
+    "contact": "Contacts"
   },
-  "MainHeader": "Desenvolvendo o seu produto com você.",
-  "About1": "Quem somos",
-  "About2": "Nossa essência é a paixão pela tecnologia. Juntos, podemos construir ou integrar qualquer sistema que você precisa para alavancar seu negócio",
-  "WhyChooseUs": "Quem somos?",
-  "WhyChooseUs2": [
-    "Trabalhamos sempre com as tecnologias mais recentes do mercado",
-    "Nossos projetos são desenvolvidos com as melhores práticas de programação",
-    "O bom relacionamento com nossos clientes é a nossa prioridade",
-    "Trabalhamos com metodologias ágeis para garantir a qualidade e a segurança do seu projeto"
-  ],
-  "Roadmap1": "Como trabalhamos?",
-  "Roadmap2": "Tudo que podemos fazer por você",
+  "MainHeader": "Developing your <span>product</span> with you.",
+  "services": {
+    "One": "Services",
+    "Two": "Products",
+    "Three": "Consulting"
+  },
+  "About1": "Who we are",
+  "About2": "Developers focused on <span>your product</span>",
+  "About3": "Our essence is the passion for technology. Together, we can build or integrate any system you need to boost your business.",
+  "Partners": "Main Partners",
+  "ButtonAbout": "Contact Us",
+  "WhyChooseUs": "Why Choose Us?",
+  "WhyChooseUs1": "Why choose our bigtech <span>Token</span>",
+  "WhyChooseUs2_1_title": "Technologies",
+  "WhyChooseUs2_1": "We always work with the latest technologies in the market.",
+  "WhyChooseUs2_2_title": "Management",
+  "WhyChooseUs2_2": "Our projects are developed with the best programming practices.",
+  "WhyChooseUs2_3_title": "Relationship",
+  "WhyChooseUs2_3": "A good relationship with our clients is our priority.",
+  "WhyChooseUs2_4_title": "Methodology",
+  "WhyChooseUs2_4": "We work with agile methodologies to ensure the quality and security of your project.",
+  "Roadmap1": "How we work?",
+  "Roadmap2": "Everything we can do for you",
   "Roadmap3": [
     {
-      "title": "API e integrações",
-      "description": "Desenvolvemos APIs para integrar seu sistema com qualquer outro sistema ou aplicativo que você precisar."
+      "title": "API and integrations",
+      "description": "We develop APIs to integrate your system with any other system or application you need."
     },
     {
-      "title": "Aplicativos",
-      "description": "Desenvolvemos aplicativos para Android e iOS, com as melhores práticas de programação e design."
+      "title": "Applications",
+      "description": "We develop applications for Android and iOS, with the best programming and design practices."
     },
     {
-      "title": "Sites e sistemas",
-      "description": "Desenvolvemos sites e sistemas web com todas as necessidades dos nossos clientes"
+      "title": "Websites and systems",
+      "description": "We develop websites and web systems with all the needs of our clients."
     },
     {
-      "title": "Consultoria",
-      "description": "Ajudamos você a escolher a melhor tecnologia para o seu projeto"
+      "title": "Consulting",
+      "description": "We help you choose the best technology for your project."
     },
     {
-      "title": "BI e inteligência artificial",
-      "description": "Construa relatórios que irão ajudar você a tomar as melhores decisões para o seu negócio"
+      "title": "BI and artificial intelligence",
+      "description": "Build reports that will help you make the best decisions for your business."
     }
   ],
-  "Whitepaper1": "Acompanhe",
-  "Whitepaper2": "Tenha todos os dados em mãos",
-  "Whitepaper3": "Disparos em massa de Whatsapp, gestão de leads, relatórios e muito mais"
+  "Whitepaper1": "Stay tuned",
+  "Whitepaper2": "Try our <span>WhatsApp automation</span> now",
+  "Whitepaper3": "Enter your phone number",
+  "Whitepaper4": "Test automation",
+  "Contact": "Contacts",
+  "Contact_sub": "Get in touch <span>with us</span>",
+  "Copyright": "Copyright © 2022. All Rights Reserved Bigtech"
 }

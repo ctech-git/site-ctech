@@ -1,42 +1,61 @@
 {
   "menu": {
-    "home": "Início em espanhol"
+    "home": "Inicio",
+    "about": "Acerca de nosotros",
+    "roadmap": "Servicios",
+    "whatsapp": "Proyectos",
+    "contact": "Contactos"
   },
-  "MainHeader": "Desenvolvendo o seu produto com você.",
-  "About1": "Quem somos",
-  "About2": "Nossa essência é a paixão pela tecnologia. Juntos, podemos construir ou integrar qualquer sistema que você precisa para alavancar seu negócio",
-  "WhyChooseUs": "Quem somos?",
-  "WhyChooseUs2": [
-    "Trabalhamos sempre com as tecnologias mais recentes do mercado",
-    "Nossos projetos são desenvolvidos com as melhores práticas de programação",
-    "O bom relacionamento com nossos clientes é a nossa prioridade",
-    "Trabalhamos com metodologias ágeis para garantir a qualidade e a segurança do seu projeto"
-  ],
-  "Roadmap1": "Como trabalhamos?",
-  "Roadmap2": "Tudo que podemos fazer por você",
+  "MainHeader": "Desarrollando tu <span>producto</span> contigo.",
+  "services": {
+    "One": "Servicios",
+    "Two": "Productos",
+    "Three": "Consultoría"
+  },
+  "About1": "¿Quiénes somos?",
+  "About2": "Desarrolladores enfocados en <span>tu producto</span>",
+  "About3": "Nuestra esencia es la pasión por la tecnología. Juntos, podemos construir o integrar cualquier sistema que necesites para impulsar tu negocio.",
+  "Partners": "Principales Socios",
+  "ButtonAbout": "Contáctanos",
+  "WhyChooseUs": "¿Por qué elegirnos?",
+  "WhyChooseUs1": "¿Por qué elegir nuestro <span>Token</span> bigtech?",
+  "WhyChooseUs2_1_title": "Tecnologías",
+  "WhyChooseUs2_1": "Siempre trabajamos con las últimas tecnologías del mercado.",
+  "WhyChooseUs2_2_title": "Gestión",
+  "WhyChooseUs2_2": "Nuestros proyectos se desarrollan con las mejores prácticas de programación.",
+  "WhyChooseUs2_3_title": "Relación",
+  "WhyChooseUs2_3": "Mantener una buena relación con nuestros clientes es nuestra prioridad.",
+  "WhyChooseUs2_4_title": "Metodología",
+  "WhyChooseUs2_4": "Trabajamos con metodologías ágiles para garantizar la calidad y seguridad de tu proyecto.",
+  "Roadmap1": "¿Cómo trabajamos?",
+  "Roadmap2": "Todo lo que podemos hacer por ti",
   "Roadmap3": [
     {
-      "title": "API e integrações",
-      "description": "Desenvolvemos APIs para integrar seu sistema com qualquer outro sistema ou aplicativo que você precisar."
+      "title": "API e integraciones",
+      "description": "Desarrollamos APIs para integrar tu sistema con cualquier otro sistema o aplicación que necesites."
     },
     {
-      "title": "Aplicativos",
-      "description": "Desenvolvemos aplicativos para Android e iOS, com as melhores práticas de programação e design."
+      "title": "Aplicaciones",
+      "description": "Desarrollamos aplicaciones para Android e iOS, con las mejores prácticas de programación y diseño."
     },
     {
-      "title": "Sites e sistemas",
-      "description": "Desenvolvemos sites e sistemas web com todas as necessidades dos nossos clientes"
+      "title": "Sitios y sistemas",
+      "description": "Desarrollamos sitios web y sistemas con todas las necesidades de nuestros clientes."
     },
     {
-      "title": "Consultoria",
-      "description": "Ajudamos você a escolher a melhor tecnologia para o seu projeto"
+      "title": "Consultoría",
+      "description": "Te ayudamos a elegir la mejor tecnología para tu proyecto."
     },
     {
-      "title": "BI e inteligência artificial",
-      "description": "Construa relatórios que irão ajudar você a tomar as melhores decisões para o seu negócio"
+      "title": "BI e inteligencia artificial",
+      "description": "Construye informes que te ayudarán a tomar las mejores decisiones para tu negocio."
     }
   ],
-  "Whitepaper1": "Acompanhe",
-  "Whitepaper2": "Tenha todos os dados em mãos",
-  "Whitepaper3": "Disparos em massa de Whatsapp, gestão de leads, relatórios e muito mais"
+  "Whitepaper1": "Mantente informado",
+  "Whitepaper2": "Prueba nuestra <span>automatización de WhatsApp</span> ahora",
+  "Whitepaper3": "Ingresa tu número de teléfono",
+  "Whitepaper4": "Probar automatización",
+  "Contact": "Contactos",
+  "Contact_sub": "Ponte en contacto <span>con nosotros</span>",
+  "Copyright": "Derechos de autor © 2022. Todos los derechos reservados Bigtech"
 }
