@@ -34,7 +34,7 @@ export default function Home() {
             <WhitePaper />
           </div>
 
-          <TeamOne />
+          {/* <TeamOne /> */}
           <ContactOne />
         </main>
       </LayoutOne>

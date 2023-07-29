@@ -1,7 +1,11 @@
 import React from "react";
 import TeamOneItem from "./TeamOneItem";
+import { useTranslation } from "next-i18next";
 
 const TeamOne = () => {
+
+  const { t, i18n } = useTranslation(); // 'common' é o namespace definido na configuração
+
   const team_members = [
     {
       src: "/img/team/team_img01.png",
@@ -51,7 +55,7 @@ const TeamOne = () => {
         <div className="row justify-content-center">
           <div className="col-xl-6">
             <div className="section-title text-center mb-70">
-              <span className="sub-title">OUr team</span>
+              <span className="sub-title">{t("OurTeam")}</span>
               <h2 className="title">
                 The Leadership <br /> <span>Team</span>
               </h2>

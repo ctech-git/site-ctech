@@ -29,7 +29,7 @@ const WhoWeAre = () => {
               <p>
                 {t("About3")}
               </p>
-              <Link href="/" className="btn">
+              <Link href="#contact" className="btn">
                 {t("ButtonAbout")}
               </Link>
             </div>

@@ -211,7 +211,7 @@ const HeaderOne = () => {
                         </ul>
                       </li>
                       <li className={"header-btn"}>
-                        <Link href="#" className="btn">
+                        <Link href="#contact" className="btn">
                           {t("menu.contact")}
                         </Link>
                       </li>

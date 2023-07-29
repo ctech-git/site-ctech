@@ -1,8 +1,12 @@
 import { scrollToTop } from "@/lib/helpers";
 import Link from "next/link";
 import React from "react";
+import { useTranslation } from "next-i18next";
 
 const FooterOne = () => {
+
+  const { t, i18n } = useTranslation(); // 'common' é o namespace definido na configuração
+
   return (
     <footer>
       <div className="footer-area">
@@ -16,9 +20,9 @@ const FooterOne = () => {
               <i className="fas fa-arrow-up"></i>
             </button>
           </div>
-          <div className="footer-top">
+          {/* <div className="footer-top">
             <div className="row">
-              <div className="col-xl-3 col-lg-4 col-md-6">
+              <div className="col-xl-4 col-lg-4 col-md-6">
                 <div
                   className="footer-widget wow fadeInUp"
                   data-wow-delay=".2s"
@@ -27,37 +31,12 @@ const FooterOne = () => {
                     <img src={"/img/logo/logo.png"} alt="BigTech Logo" />
                   </Link>
                   <div className="footer-content">
-                    <p>
-                      A new way to make the payments easy, reliable and 100%
-                      secure. claritatem itamconse quat. Exerci tationulla
-                    </p>
-                    <ul className="footer-social">
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-youtube"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-twitter"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-facebook-f"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-skype"></i>
-                        </a>
-                      </li>
-                    </ul>
+                    <p>{t("FooterText")}</p>
                   </div>
                 </div>
               </div>
-              <div className="col-xl-3 col-lg-5 col-sm-6">
-                <div
+              <div className="col-xl-4 col-lg-5 col-sm-6">
+                 <div
                   className="footer-widget  wow fadeInUp"
                   data-wow-delay=".4s"
                 >
@@ -81,71 +60,20 @@ const FooterOne = () => {
                       </li>
                     </ul>
                   </div>
-                </div>
-              </div>
-              <div className="col-xl-2 col-lg-3 col-sm-6">
-                <div
-                  className="footer-widget wow fadeInUp"
-                  data-wow-delay=".6s"
-                >
-                  <h4 className="fw-title">Community</h4>
-                  <div className="footer-link">
-                    <ul>
-                      <li>
-                        <Link href="/">Help Center</Link>
-                      </li>
-                      <li>
-                        <Link href="/">Partners</Link>
-                      </li>
-                      <li>
-                        <Link href="/">Suggestions</Link>
-                      </li>
-                      <li>
-                        <Link href="/">Blog</Link>
-                      </li>
-                      <li>
-                        <Link href="/">Newsletters</Link>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-4 col-lg-4 col-md-6">
-                <div
-                  className="footer-widget wow fadeInUp"
-                  data-wow-delay=".8s"
-                >
-                  <h4 className="fw-title">Subscribe Newsletter</h4>
-                  <div className="footer-newsletter">
-                    <p>
-                      Exerci tation ullamcorper suscipit lobortis nisl aliquip
-                      ex ea commodo
-                    </p>
-                    <form action="#">
-                      <input
-                        type="email"
-                        placeholder="Info@gmail.com"
-                        required
-                      />
-                      <button type="submit">
-                        <i className="fas fa-paper-plane"></i>
-                      </button>
-                    </form>
-                  </div>
-                </div>
+                </div> 
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="footer-bottom">
             <div className="row align-items-center">
               <div className="col-lg-6">
                 <div className="copyright-text">
-                  <p>Copyright &copy; 2022. All Rights Reserved Bigtech</p>
+                  <p>{t("Copyright")}</p>
                 </div>
               </div>
               <div className="col-lg-6 d-none d-sm-block">
                 <div className="footer-menu">
-                  <ul>
+                  {/* <ul>
                     <li>
                       <Link href="#">Terms and conditions</Link>
                     </li>
@@ -155,7 +83,7 @@ const FooterOne = () => {
                     <li>
                       <Link href="#">Login / Signup</Link>
                     </li>
-                  </ul>
+                  </ul> */}
                 </div>
               </div>
             </div>
