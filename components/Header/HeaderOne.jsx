@@ -109,7 +109,7 @@ const HeaderOne = () => {
                 <nav className={"menu-nav"}>
                   <div className="logo">
                     <Link href={"/"}>
-                      <img src={"/img/logo/logo.png"} alt="BigTech Logo" />
+                      <img src={"/img/logo/ctech.png"} alt="BigTech Logo" />
                     </Link>
                   </div>
 
@@ -145,7 +145,7 @@ const HeaderOne = () => {
                           className={"section-link"}
                           onClick={() => handleClickScroll("about")}
                         >
-                          About us
+                          {t("menu.about")}
                         </Link>
                       </li>
                       <li className={isActiveLink("#sales")}>
@@ -154,7 +154,7 @@ const HeaderOne = () => {
                           className={"section-link"}
                           onClick={() => handleClickScroll("sales")}
                         >
-                          Sales
+                          {t("menu.sales")}
                         </Link>
                       </li>
                       <li className={isActiveLink("#roadmap")}>
@@ -163,10 +163,10 @@ const HeaderOne = () => {
                           className={"section-link"}
                           onClick={() => handleClickScroll("roadmap")}
                         >
-                          Roadmap
+                          {t("menu.rodmap")}
                         </Link>
                       </li>
-                      <li className={"menu-item-has-children"}>
+                      {/* <li className={"menu-item-has-children"}>
                         <Link href="/blog">Blog</Link>
                         <ul className={cn("sub-menu")}>
                           <li className={cn(pathname == "/blog" && "active")}>
@@ -180,16 +180,16 @@ const HeaderOne = () => {
                             <Link href="/blog/blog-details">Blog Details</Link>
                           </li>
                         </ul>
-                      </li>
-                      <li className={isActiveLink("#contact")}>
+                      </li> */}
+                      {/* <li className={isActiveLink("#contact")}>
                         <Link
                           href="#contact"
                           className={"section-link"}
                           onClick={() => handleClickScroll("contact")}
                         >
-                          Contact us
+                          {t("menu.contact")}
                         </Link>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                   <div className={cn("header-action", "d-none d-md-block")}>
@@ -212,7 +212,7 @@ const HeaderOne = () => {
                       </li>
                       <li className={"header-btn"}>
                         <Link href="#" className="btn">
-                          Buy Now
+                          {t("menu.contact")}
                         </Link>
                       </li>
                     </ul>
@@ -229,7 +229,7 @@ const HeaderOne = () => {
                   <div className={"nav-logo"}>
                     <Link href="/">
                       <img
-                        src={"/img/logo/logo.png"}
+                        src={"/img/logo/ctech.png"}
                         alt="BigTech Logo"
                         title=""
                       />

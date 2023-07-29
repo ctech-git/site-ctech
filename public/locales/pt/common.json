@@ -6,9 +6,16 @@
     "rodmap": "Projetos",
     "contact": "Contatos"
   },
-  "MainHeader": "Desenvolvendo o seu produto com você.",
+  "MainHeader": "Desenvolvendo o seu <span>produto</span> com você.",
+  "services": {
+    "One": "Serviços",
+    "Two": "Produtos",
+    "Three": "Consultoria"
+  },
   "About1": "Quem somos",
-  "About2": "Nossa essência é a paixão pela tecnologia. Juntos, podemos construir ou integrar qualquer sistema que você precisa para alavancar seu negócio",
+  "About2": "The World’s 1st <span>ICO</span> Platform ",
+  "About3": "Nossa essência é a paixão pela tecnologia. Juntos, podemos construir ou integrar qualquer sistema que você precisa para alavancar seu negócio",
+  "ButtonAbout": "Fale Conosco",
   "WhyChooseUs": "Quem somos?",
   "WhyChooseUs2": [
     "Trabalhamos sempre com as tecnologias mais recentes do mercado",
