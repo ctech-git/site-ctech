@@ -1,23 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import cn from "classnames";
 import $ from "jquery";
 import Link from "next/link";
 import { handleClickScroll } from "@/lib/helpers";
 import { useRouter } from "next/router";
-import { useLanguage } from '../../contexts/LanguageContext';
-import { useTranslation } from 'next-i18next';
+import { useLanguage } from "../../contexts/LanguageContext";
+import { useTranslation } from "next-i18next";
 
 let flag = true;
 
 const HeaderOne = () => {
   // sticky nav bar
+
   const [stickyClass, setStickyClass] = useState({
     fixed: "",
     header: "",
   });
-  const { language, changeLanguage } = useLanguage();
-  const { t } = useTranslation('common'); // 'common' é o namespace definido na configuração
-
+  const { t, i18n } = useTranslation(); // 'common' é o namespace definido na configuração
   const stickNavbar = () => {
     if (window !== undefined) {
       let windowHeight = window.scrollY;
@@ -74,6 +73,7 @@ const HeaderOne = () => {
   // active link switching
   const [hash, setHash] = useState("");
   const { asPath, pathname } = useRouter();
+  const router = useRouter();
 
   useEffect(() => {
     setHash(asPath.split("#")[1]);
@@ -83,14 +83,16 @@ const HeaderOne = () => {
     return id == "#" + hash ? "active" : "";
   };
 
-  const handlerLanguage = (value) => {
-    changeLanguage(
-      value === 'EN' ? 'en'
-        : value === 'PT' ? 'pt'
-          : value === 'ES' ? 'es' : 'pt'
-    );
-  }
+  const switchToLocale = useCallback(
+    (locale) => {
+      console.log({ locale });
+      const path = router.asPath;
+      console.log({ path });
 
+      return router.push(`/${locale}`);
+    },
+    [router]
+  );
   return (
     <header id="header">
       <div id="header-fixed-height" className={cn(stickyClass.fixed)} />
@@ -124,7 +126,7 @@ const HeaderOne = () => {
                           className={"section-link"}
                           onClick={() => handleClickScroll("header")}
                         >
-                          {t('menu.home')}
+                          {t("menu.home")}
                         </Link>
                         {/* <ul className={cn("sub-menu")}>
                           <li className={cn(pathname == "/" && "active")}>
@@ -193,16 +195,18 @@ const HeaderOne = () => {
                   <div className={cn("header-action", "d-none d-md-block")}>
                     <ul>
                       <li className={"header-lang"}>
-                        <span className={"selected-lang"}>{language.toUpperCase()}</span>
+                        <span className={"selected-lang"}>
+                          {i18n.language.toUpperCase()}
+                        </span>
                         <ul className={"lang-list"}>
                           <li>
-                            <a onClick={() => handlerLanguage('en')}>EN</a>
+                            <a onClick={() => switchToLocale("en")}>EN</a>
                           </li>
                           <li>
-                            <a onClick={() => handlerLanguage('pt')}>PT</a>
+                            <a onClick={() => switchToLocale("pt")}>PT</a>
                           </li>
                           <li>
-                            <a onClick={() => handlerLanguage('es')}>ES</a>
+                            <a onClick={() => switchToLocale("es")}>ES</a>
                           </li>
                         </ul>
                       </li>

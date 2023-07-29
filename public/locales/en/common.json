@@ -1,10 +1,6 @@
 {
   "menu": {
-    "home": "Inicio",
-    "about": "Sobre Nós",
-    "sales": "Serviços",
-    "rodmap": "Projetos",
-    "contact": "Contatos"
+    "home": "Início em inglês"
   },
   "MainHeader": "Desenvolvendo o seu produto com você.",
   "About1": "Quem somos",
@@ -42,5 +38,5 @@
   ],
   "Whitepaper1": "Acompanhe",
   "Whitepaper2": "Tenha todos os dados em mãos",
-  "Whitepaper3": "Disparos em massa de Whatsapp, gestão de leads, relatórios e muito mais",
+  "Whitepaper3": "Disparos em massa de Whatsapp, gestão de leads, relatórios e muito mais"
 }
