@@ -2,8 +2,6 @@ import Head from "next/head";
 import Banner from "@/components/Banner/Banner";
 import ContactOne from "@/components/Contact/ContactOne";
 import Roadmap from "@/components/Roadmap/Roadmap";
-import Sales from "@/components/Sales/Sales";
-import TeamOne from "@/components/Team/TeamOne";
 import TopPartners from "@/components/TopPartners/TopPartners";
 import WhitePaper from "@/components/WhitePaper/WhitePaper";
 import WhoWeAre from "@/components/WhoWeAre/WhoWeAre";
@@ -50,5 +48,6 @@ export async function getStaticProps({ params }) {
     props: {
       ...(await serverSideTranslations(params.locale || "pt", ["common"])),
     },
+    revalidate: 600,
   };
 }

@@ -1,12 +1,12 @@
-export default function Home() {
-  return <></>;
-}
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 
-export async function getStaticProps({ locale }) {
-  return {
-    redirect: {
-      destination: "/pt",
-      permanent: false, // Defina como true se desejar que o redirecionamento seja permanente (código 301)
-    },
-  };
+export default function Home() {
+  const router = useRouter();
+
+  useEffect(() => {
+    router.push("/pt");
+  }, []);
+
+  return <></>;
 }
