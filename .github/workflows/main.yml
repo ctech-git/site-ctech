@@ -17,7 +17,7 @@ jobs:
             USER_NAME: ${{secrets.USER_NAME}}
       
         run: |
-          ssh -o StrictHostKeyChecking=no -i <(echo "$SSH_KEY") ${USER_NAME}@${HOSTNAME}'
+          ssh -o StrictHostKeyChecking=no -i <(echo "$SSH_KEY") ${USER_NAME}@${HOSTNAME} '
 
               cd /ctech/site-ctech/front
               git pull
