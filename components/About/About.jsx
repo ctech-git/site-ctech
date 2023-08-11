@@ -21,7 +21,7 @@ const About = () => {
               <div className="section-title section-title-two mb-15">
                 <span className="sub-title">ABOUT Crypto ICO</span>
                 <h2 className="title">
-                  Bigtech Theme is the best for your ICO
+                  CTECH Theme is the best for your ICO
                 </h2>
               </div>
               <p>

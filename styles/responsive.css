@@ -78,6 +78,7 @@
   .header-lang .lang-list li a {
     font-size: 15px;
     letter-spacing: 1px;
+    cursor: pointer;
   }
 
   .header-lang .selected-lang::after {
@@ -307,6 +308,7 @@
   .header-lang .lang-list {
     left: auto;
     right: 0;
+    cursor: pointer;
   }
 
   .banner-area-two .banner-content .title {

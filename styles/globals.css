@@ -1,7 +1,7 @@
 /*
-  Theme Name: Bigtech - ICO & Crypto Landing Page Template
+  Theme Name: CTECH - ICO & Crypto Landing Page Template
   Support: themegenix@gmail.com
-  Description: Bigtech - ICO & Crypto Landing Page Template.
+  Description: CTECH - ICO & Crypto Landing Page Template.
   Version: 1.0
 */
 
@@ -562,10 +562,12 @@ label {
 .header-lang .lang-list li {
   margin-bottom: 5px;
   line-height: 1;
+  cursor: pointer;
 }
 
 .header-lang .lang-list li:last-child {
   margin-bottom: 0;
+  cursor: pointer;
 }
 
 .header-lang .lang-list li a {
@@ -575,6 +577,7 @@ label {
   padding: 5px 15px 5px 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 
 .header-lang .lang-list li a:hover {

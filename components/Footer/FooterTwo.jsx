@@ -59,7 +59,7 @@ const FooterTwo = () => {
             <div className="row">
               <div className="col-lg-5">
                 <div className="copyright-text">
-                  <p>Copyright &copy; 2022. All Rights Reserved Bigtech</p>
+                  <p>Copyright &copy; 2022. All Rights Reserved CTECH</p>
                 </div>
               </div>
               <div className="col-lg-2">

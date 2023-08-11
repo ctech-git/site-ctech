@@ -45,7 +45,7 @@ const RoadmapTwo = () => {
             <div className="section-title section-title-two text-center mb-65">
               <span className="sub-title">roadmap</span>
               <h2 className="title">
-                Bigtech Strategy and <br />
+                CTECH Strategy and <br />
                 Project Plan
               </h2>
             </div>

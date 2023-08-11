@@ -114,7 +114,7 @@ const FooterThree = () => {
             <div className="row align-items-center">
               <div className="col-lg-6">
                 <div className="copyright-text">
-                  <p>© Copyright 2022 Bigtech. All Rights Reserved Copyright</p>
+                  <p>© Copyright 2022 CTECH. All Rights Reserved Copyright</p>
                 </div>
               </div>
               <div className="col-lg-6">
