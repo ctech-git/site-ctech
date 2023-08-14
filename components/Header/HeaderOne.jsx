@@ -109,7 +109,9 @@ const HeaderOne = () => {
                 <nav className={"menu-nav"}>
                   <div className="logo">
                     <Link href={"/"}>
-                      <img src={"/img/logo/logo.png"} alt="BigTech Logo" />
+                      <img src={"/img/logo/logo.svg"} 
+                      style={{width: "15rem"}}
+                      alt="BigTech Logo" />
                     </Link>
                   </div>
 

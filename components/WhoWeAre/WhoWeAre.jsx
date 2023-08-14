@@ -12,12 +12,8 @@ const WhoWeAre = () => {
         <div className="row align-items-center">
           <div className="col-lg-6">
             <div className="about-img wow fadeInLeft" data-wow-delay=".2s">
-              <img src={"/img/images/about_img01.png"} alt="" />
-              <img
-                src={"/img/images/about_img02.png"}
-                alt=""
-                className="img-two"
-              />
+              <img src={"/img/logo/perfil.png"} alt="" />
+              
             </div>
           </div>
           <div className="col-lg-6">

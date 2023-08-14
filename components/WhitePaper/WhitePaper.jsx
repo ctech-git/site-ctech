@@ -67,17 +67,18 @@ const WhitePaper = () => {
                 <h2 className="title" dangerouslySetInnerHTML={{ __html: t("Whitepaper2") }}></h2>
               </div>
               <div className="footer-newsletter">
-                <form action="#">
+                <form action="#a">
 
                   <PhoneInput
                     placeholder={t("Whitepaper3")}
+                    defaultCountry="BR"
                     value={telefone}
                     onChange={setTelefone} />
 
                 </form>
               </div>
 
-              <Link href="#" onClick={enviarWhatsapp} className="btn" style={{ marginTop: 10 }}>
+              <Link href="#a" onClick={enviarWhatsapp} className="btn" style={{ marginTop: 10 }}>
                 {t("Whitepaper4")}
               </Link>
             </div>
