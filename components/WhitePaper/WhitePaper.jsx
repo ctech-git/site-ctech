@@ -3,6 +3,7 @@ import Link from "next/link";
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
 import { useTranslation } from "next-i18next";
+import toast, { Toaster } from 'react-hot-toast';
 
 
 
@@ -17,8 +18,7 @@ const WhitePaper = () => {
 
 
   const enviarWhatsapp = () => {
-
-    // const numberFormatted = telefone.replace(/\D/g, '');
+    toast.success(`Mensagem enviada para ${telefone}`);
 
     let body = {
       "to": telefone,
@@ -46,6 +46,8 @@ const WhitePaper = () => {
 
   return (
     <section className="document-area pt-60">
+    <Toaster />
+
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-7 order-2 order-lg-0">
